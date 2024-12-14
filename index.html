@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realidad Aumentada</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Librerías AR.js y A-Frame -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/jeromeetienne/AR.js/1.7.0/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+    <!-- Encabezado -->
+    <h1>Realidad Aumentada con AR.js</h1>
+    <!-- Contenedor AR -->
+    <div class="ar-container">
+        <a-scene embedded arjs>
+            <!-- El marcador que se va a escanear -->
+            <a-marker type="pattern" url="prison.patt">
+                <!-- Modelo 3D que aparecerá al detectar el marcador -->
+                <a-entity gltf-model="f1.glb" scale="0.5 0.5 0.5"></a-entity>
+                </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
+    </div>
+</body>
+</html>
