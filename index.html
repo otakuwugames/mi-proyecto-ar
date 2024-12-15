@@ -11,12 +11,12 @@
     <script src="https://rawgit.com/jeromeetienne/AR.js/1.7.0/aframe/build/aframe-ar.js"></script>
 </head>
 <body>
-    <h1>Actualizacion 2</h1>
+    <h1>Actualizacion 2 berserk</h1>
     <!-- Encabezado -->
     <h1>Realidad Aumentada con AR.js</h1>
     <!-- Contenedor AR -->
     <div class="ar-container">
-        <a-scene embedded arjs="trackingMethod: best: sourceType: webcam;">
+        <a-scene embedded arjs>
             <!-- 1 -->
             <a-marker type="pattern" url="mari.patt">
                 <!-- Modelo 3D que aparecerá al detectar el marcador -->
@@ -51,6 +51,18 @@
             <a-marker type="pattern" url="pattern-b.patt">
                 <!-- Modelo 3D que aparecerá al detectar el marcador -->
                 <a-entity gltf-model="f1.glb" scale="1 1 1"></a-entity>
+            </a-marker>
+
+            <!-- 7 -->
+            <a-marker type="pattern" url="pattern-b.patt">
+                <!-- Modelo 3D que aparecerá al detectar el marcador -->
+                <a-entity gltf-model="car.glb" scale="1 1 1"></a-entity>
+            </a-marker>
+
+            <!-- 8 -->
+            <a-marker type="pattern" url="pattern-b.patt">
+                <!-- Modelo 3D que aparecerá al detectar el marcador -->
+                <a-entity gltf-model="habitacion.glb" scale="1 1 1"></a-entity>
             </a-marker>
 
             <a-entity camera></a-entity>
