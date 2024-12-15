@@ -11,16 +11,42 @@
     <script src="https://rawgit.com/jeromeetienne/AR.js/1.7.0/aframe/build/aframe-ar.js"></script>
 </head>
 <body>
+    <h1>Actualizacion</h1>
     <!-- Encabezado -->
     <h1>Realidad Aumentada con AR.js</h1>
     <!-- Contenedor AR -->
     <div class="ar-container">
         <a-scene embedded arjs>
-            <!-- El marcador que se va a escanear -->
-            <a-marker type="pattern" url="prison.patt">
+            <!-- 1 -->
+            <a-marker type="pattern" url="mari.patt">
                 <!-- Modelo 3D que aparecerá al detectar el marcador -->
                 <a-entity gltf-model="f1.glb" scale="0.5 0.5 0.5"></a-entity>
-                </a-marker>
+            </a-marker>
+
+            <!-- 2 -->
+            <a-marker type="pattern" url="marii.patt">
+                <!-- Modelo 3D que aparecerá al detectar el marcador -->
+                <a-entity gltf-model="f1.glb" scale="0.5 0.5 0.5"></a-entity>
+            </a-marker>
+            
+            <!-- 3 -->
+            <a-marker type="pattern" url="mariii.patt">
+                <!-- Modelo 3D que aparecerá al detectar el marcador -->
+                <a-entity gltf-model="f1.glb" scale="0.5 0.5 0.5"></a-entity>
+            </a-marker>
+            
+            <!-- 4 -->
+            <a-marker type="pattern" url="mariiii.patt">
+                <!-- Modelo 3D que aparecerá al detectar el marcador -->
+                <a-entity gltf-model="habitacion.glb" scale="0.5 0.5 0.5"></a-entity>
+            </a-marker>
+
+            <!-- 5 -->
+            <a-marker type="pattern" url="mariiiii.patt">
+                <!-- Modelo 3D que aparecerá al detectar el marcador -->
+                <a-entity gltf-model="car.glb" scale="0.5 0.5 0.5"></a-entity>
+            </a-marker>
+
             <a-entity camera></a-entity>
         </a-scene>
     </div>
